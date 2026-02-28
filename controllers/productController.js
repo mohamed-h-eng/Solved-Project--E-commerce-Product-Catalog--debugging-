@@ -24,7 +24,7 @@ const createProduct = async (req, res) => {
 
 const getAllProducts = async (req, res) => {
   try {
-    const limit = req.query.limit || "10";
+    const limit = req.query.limit || 10;
     const products = await Product.find().limit(limit);
     res.status(200).json({ msg: "Products fetched", data: products });
   }catch (error) {
