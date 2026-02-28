@@ -1,7 +1,7 @@
 // category value extracted from req.body to include while creating product
 // update the promise to be async/await
 // in createProduct added validation to check if product already exist
-
+// modified limit value to take 10 as number not a string
 const Product = require("../models/Product");
 
 const createProduct = async (req, res) => {
